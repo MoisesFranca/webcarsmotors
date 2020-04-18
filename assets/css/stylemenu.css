@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: monospace;
+    background-color: whitesmoke;
+    font-size: 15px;
+   
+}
+/* -----------------------------------*/
+/* ---------->>> MENU E LOGO <<<-----------*/
+/* -----------------------------------*/
+nav{
+    background: whitesmoke;
+    height: 90px;
+    width: 100%;
+    border-bottom: solid 2px red;
+
+}
+
+.logo{
+    color: red;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    color:red;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: bold;
+}
+ a:hover{
+    color:black;
+    font-weight: bold;
+
+}
+
+.ativaçãobtn{
+    font-size: 30px;
+    color:red;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#botãomenures{
+    display: none;
+    
+}
+
+@media(max-width: 952px){
+    label.logo{
+        font-size: 20px;
+        padding-left: 30px; 
+             
+             
+    }
+   
+    .CAIXAS-SOBRE-NOS{
+        font-size: 16px; 
+        
+        
+      
+    }
+    section h1{
+        font-size: 18px;
+    }
+    section h2{
+        font-size: 18px;
+    }
+    section h3{
+        font-size: 18px;
+    }
+    nav{
+        background:black;
+        display: flex;
+        justify-content: space-evenly;
+  
+      
+    }
+  
+   nav ul li a{
+        font-size: 20px;
+      
+       
+     
+   }
+  
+
+}
+/* -----------------------------------*/
+/* ---------->>> ADPATÇÃO DE ALGUNS ELEMENTOS COMO NAV <<<-----------*/
+/* -----------------------------------*/
+@media(max-width: 858px){
+    .ativaçãobtn{
+      display: block;
+     
+
+    }
+    footer{
+        height: 70vh;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 160vh;
+        background: black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 200;  
+    }
+   
+    nav ul li{
+        display: block;
+        margin: 20px 0;
+        line-height: 80px;
+    
+      
+     
+    }
+    nav ul li a{
+        font-size: 20px;
+        z-index: 300000;
+     
+     
+        
+    }
+    a:hover{
+        color:whitesmoke;
+        font-weight: bold;
+    }
+    #botãomenures:checked ~ ul{
+        left:0;
+        position: absolute; 
+        justify-content: space-around;
+    }
+ 
+}
+
+
+/* -----------------------------------*/
+/* ---------->>> SLIDES <<<-----------*/
+/* -----------------------------------*/
+
+
+  #slides{
+      overflow: hidden;
+      height: 33,3vh;
+   
+  }
+  #slides figure{
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      animation: slides 20s infinite; 
+  }
+  #slides figure img{
+      width: 20%;
+      float: left;
+      border-bottom:  red solid 2px;
+  }
+  
+  @keyframes slides{
+      0%{
+          left:0;
+      }
+      20%{
+          left: 0;
+      }
+      25%{
+          left: -100%;
+      }
+      45%{
+          left:-100%;
+      }
+      50%{
+          left: 0;
+      }
+    }
+    
+
+
+/* -----------------------------------*/
+/* ---------->>> SECTION E RODAPÉ <<<-----------*/
+/* -----------------------------------*/
+
+
+p {
+    margin-bottom:10px;
+    margin-top: 10px;  
+}
+
+section, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#conteudo-principal{
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#conteudo-principal-sobre-nos{
+   text-align: center;
+   font-size: 16PX;
+   font-weight: bold;
+   color: black;
+   background-color: whitesmoke; 
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-content: center;
+
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+}
+h2{
+    width: 100%;
+    text-align: center;
+}
+h3{
+    width: 100%;
+    text-align: center;
+}
+#logo-das-marcas{
+    text-align: center;
+    width: 100%;
+}
+
+
+
+.CAIXASPRINC{
+ 
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.SOBREOVEICULO p{  
+    font-weight: bold;
+    text-align: justify;
+  
+}
+
+
+#webcarsmotros img{
+    width: 80%;
+}
+
+#webcarsmotros{
+    background-color: rgb(230,230,230);
+    border-top: solid 2px rgb(230,230,230);
+ }
+ 
+
+
+thead{
+ 
+    text-align: center;
+    font-weight: 900;
+  
+ 
+}
+tbody{
+  
+    text-align: center;
+    font-weight: bolder;
+  
+}
+table td{
+    font-size: 13px;
+    border: red 2px solid;
+}
+
+
+footer {
+  
+    background-color:black;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+    overflow: hidden;
+  
+    border-top: solid 2px red;
+}
+footer p{
+    padding-top: -100px;
+}
